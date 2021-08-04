@@ -13,9 +13,11 @@
 		8E5922FD26B93101002358C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5922FB26B93101002358C5 /* Main.storyboard */; };
 		8E5922FF26B93102002358C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5922FE26B93102002358C5 /* Assets.xcassets */; };
 		8E59230226B93102002358C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E59230026B93102002358C5 /* LaunchScreen.storyboard */; };
+		94046C5B4C42FE6F9EDF0B26 /* Pods_CompletionBlock_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39DC918A739CF757F09A9AA /* Pods_CompletionBlock_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3042965252BBFA02491A378E /* Pods-CompletionBlock-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompletionBlock-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-CompletionBlock-Tutorial/Pods-CompletionBlock-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		8E5922F226B93101002358C5 /* CompletionBlock-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompletionBlock-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5922F526B93101002358C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E5922F726B93101002358C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		8E5922FE26B93102002358C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E59230126B93102002358C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E59230326B93102002358C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4A1E9C4C3D7279ACD00C4AA /* Pods-CompletionBlock-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompletionBlock-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-CompletionBlock-Tutorial/Pods-CompletionBlock-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		F39DC918A739CF757F09A9AA /* Pods_CompletionBlock_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CompletionBlock_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94046C5B4C42FE6F9EDF0B26 /* Pods_CompletionBlock_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE6D71EF572E3F4A032054A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F39DC918A739CF757F09A9AA /* Pods_CompletionBlock_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DC0E07C727318EF0A46C5B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1E9C4C3D7279ACD00C4AA /* Pods-CompletionBlock-Tutorial.debug.xcconfig */,
+				3042965252BBFA02491A378E /* Pods-CompletionBlock-Tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E5922E926B93101002358C5 = {
 			isa = PBXGroup;
 			children = (
 				8E5922F426B93101002358C5 /* CompletionBlock-Tutorial */,
 				8E5922F326B93101002358C5 /* Products */,
+				5DC0E07C727318EF0A46C5B4 /* Pods */,
+				0FE6D71EF572E3F4A032054A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E59230626B93102002358C5 /* Build configuration list for PBXNativeTarget "CompletionBlock-Tutorial" */;
 			buildPhases = (
+				03F0E659B5D20EC1C71A2D77 /* [CP] Check Pods Manifest.lock */,
 				8E5922EE26B93101002358C5 /* Sources */,
 				8E5922EF26B93101002358C5 /* Frameworks */,
 				8E5922F026B93101002358C5 /* Resources */,
+				86388B22AC43D94B8A8757A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03F0E659B5D20EC1C71A2D77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CompletionBlock-Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86388B22AC43D94B8A8757A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompletionBlock-Tutorial/Pods-CompletionBlock-Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompletionBlock-Tutorial/Pods-CompletionBlock-Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CompletionBlock-Tutorial/Pods-CompletionBlock-Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E5922EE26B93101002358C5 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		8E59230726B93102002358C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A1E9C4C3D7279ACD00C4AA /* Pods-CompletionBlock-Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		8E59230826B93102002358C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3042965252BBFA02491A378E /* Pods-CompletionBlock-Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
